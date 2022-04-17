@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "averMaxKda",
-    "fullyQualifiedName": "utils.averMaxKda",
+    "name": "averMax",
+    "fullyQualifiedName": "utils.averMax",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,13 +19,13 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(matches, kda) =>  _.round(_.reduce(_.map(matches, match => match[kda]), (cur, total) => cur + total, 0 ) / 20)",
+      "body": "(matches, field) =>  {\n\t\treturn field !== 'duration' ?\n\t\t\tutils.greaterNum((_.reduce(_.map(matches, match => match[field]), (cur, total) => cur + total, 0 ) / 20).toFixed(), 1000, 'K') :\n\t\t  (_.reduce(_.map(matches, match => match[field]), (cur, total) => cur + total, 0 ) / 20)\n\t}",
       "jsArguments": [
         {
           "name": "matches"
         },
         {
-          "name": "kda"
+          "name": "field"
         }
       ],
       "isAsync": false
@@ -40,14 +40,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(matches, kda) =>  _.round(_.reduce(_.map(matches, match => match[kda]), (cur, total) => cur + total, 0 ) / 20)"
+      "(matches, field) =>  {\n\t\treturn field !== 'duration' ?\n\t\t\tutils.greaterNum((_.reduce(_.map(matches, match => match[field]), (cur, total) => cur + total, 0 ) / 20).toFixed(), 1000, 'K') :\n\t\t  (_.reduce(_.map(matches, match => match[field]), (cur, total) => cur + total, 0 ) / 20)\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "player-detail_utils.averMaxKda",
+  "id": "player-detail_utils.averMax",
   "deleted": false,
   "gitSyncId": "625844870d3d384069c0e4c7_625bb0b00d3d384069c1a4c7"
 }

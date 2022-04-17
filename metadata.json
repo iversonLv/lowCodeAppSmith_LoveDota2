@@ -21,11 +21,11 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "player-detail_utils.averMaxData": {
+    "player-detail_utils.averMax": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "player-detail_utils.averMaxKda": {
+    "player-detail_utils.averMaxData": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
@@ -38,6 +38,10 @@
       "publishedUserSetOnLoad": false
     },
     "player-detail_utils.durationFormat": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "player-detail_utils.greaterNum": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
