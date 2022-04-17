@@ -78,7 +78,7 @@
                       "topRow": 33,
                       "bottomRow": 37,
                       "parentRowSpace": 10,
-                      "autoFocus": false,
+                      "autoFocus": true,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
                       "animateLoading": true,
@@ -88,7 +88,7 @@
                           "key": "onSubmit"
                         }
                       ],
-                      "resetOnSubmit": true,
+                      "resetOnSubmit": false,
                       "leftColumn": 22,
                       "dynamicBindingPathList": [],
                       "labelStyle": "",

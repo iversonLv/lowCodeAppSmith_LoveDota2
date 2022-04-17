@@ -3644,7 +3644,7 @@
                           "key": "onSubmit"
                         }
                       ],
-                      "resetOnSubmit": true,
+                      "resetOnSubmit": false,
                       "leftColumn": 23,
                       "dynamicBindingPathList": [
                         {
