@@ -1,0 +1,152 @@
+{
+  "unpublishedPage": {
+    "name": "search-player",
+    "slug": "search-player",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1280,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 890,
+          "containerStyle": "none",
+          "snapRows": 89,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 56,
+          "minHeight": 900,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "NONE",
+              "widgetName": "Container1",
+              "borderColor": "transparent",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 0,
+              "bottomRow": 87,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas1",
+                  "rightColumn": 475.5,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "5xu4ipuloa",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 400,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "s49jpy22vv",
+                  "minHeight": 400,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "player_id_input",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "onSubmit": "{{(()=> {\nstoreValue('player_id', {\n\tplayer_id: player_id_input.text\n});\n\tnavigateTo('player-detail', {})\n})()}}",
+                      "topRow": 33,
+                      "bottomRow": 37,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.5,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 22,
+                      "dynamicBindingPathList": [],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "Please enter player id, eg: 128741677",
+                      "isDisabled": false,
+                      "key": "7xqk905zmm",
+                      "isRequired": false,
+                      "rightColumn": 42,
+                      "iconName": "search",
+                      "widgetId": "7tk9g1byy3",
+                      "isVisible": true,
+                      "label": "",
+                      "version": 2,
+                      "parentId": "5xu4ipuloa",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "iconAlign": "right",
+                      "defaultText": ""
+                    }
+                  ],
+                  "key": "0gpb0mnj4o"
+                }
+              ],
+              "borderWidth": "0",
+              "key": "3lil5nz36i",
+              "backgroundColor": "#1a2b3e",
+              "rightColumn": 64,
+              "widgetId": "s49jpy22vv",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "widgetNames": [
+          "Canvas1",
+          "Container1",
+          "MainContainer",
+          "player_id_input"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "search-player",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "625844870d3d384069c0e4c7_625c17650d3d384069c1b777"
+}

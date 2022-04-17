@@ -2,8 +2,8 @@
   "fileFormatVersion": 1,
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 3,
-  "publishedDefaultPageName": "player-detail",
-  "unpublishedDefaultPageName": "player-detail",
+  "publishedDefaultPageName": "search-player",
+  "unpublishedDefaultPageName": "search-player",
   "invisibleActionFields": {
     "player-detail_constants_game_modes": {
       "unpublishedUserSetOnLoad": false,

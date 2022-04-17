@@ -16,7 +16,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/players/128741677/recentMatches",
+      "path": "/api/players/{{appsmith.store.player_id.player_id}}/recentMatches",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -28,11 +28,17 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "appsmith.store.player_id.player_id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
