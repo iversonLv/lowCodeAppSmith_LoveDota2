@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1280,
+          "rightColumn": 1296,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -136,7 +136,7 @@
                               "key": "9s0wm9sc3r",
                               "image": "{{player.data.profile.avatarfull}}",
                               "rightColumn": 10,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "j31npkeuv9",
                               "isVisible": true,
                               "version": 1,
@@ -3620,6 +3620,54 @@
                       "isLoading": false,
                       "borderRadius": "CIRCLE",
                       "buttonVariant": "PRIMARY"
+                    },
+                    {
+                      "widgetName": "player_id_input",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "onSubmit": "{{(async () => {\n\tawait storeValue('player_id', {\n\t\tplayer_id: player_id_input.text\n\t});\n\tplayer.run();\n\twl.run(); \trecentMatches.run()\n})()}}",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.75,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 23,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "Please enter player id, eg: 128741677",
+                      "isDisabled": false,
+                      "key": "7xqk905zmm",
+                      "isRequired": false,
+                      "rightColumn": 43,
+                      "iconName": "search",
+                      "widgetId": "q2uskz4fu4",
+                      "isVisible": true,
+                      "label": "",
+                      "version": 2,
+                      "parentId": "qy71dhlwdu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "iconAlign": "right",
+                      "defaultText": "{{appsmith.store.player_id.player_id}}"
                     }
                   ],
                   "key": "x33lpjnvkf"
@@ -3771,6 +3819,7 @@
           "averMax_xpm_container",
           "back_to_search_page_btn",
           "losses_text",
+          "player_id_input",
           "player_lose",
           "player_ranktier_img",
           "player_ranktier_star",
